@@ -17,10 +17,18 @@ ADMIN = os.getenv('BRB_TELEGRAM_ADMIN')
 
 PROXY = os.getenv('BRB_PROXY', None)
 
-START_TEXT = """I'm a bot which helps you to report bugs to your IT band!
-Every time the hashtag #bugs is found in your message I will create a card in provided board and list.
-First, you should set up a board and a list where I will put new cards.
-To do this just type /config"""
+START_TEXT = ("I'm a bot which helps you to report bugs to your IT band!\n"
+              "Every time the hashtag #bugs is found in your message "
+              "I will create a card in provided board and list.\n"
+              "First, you should set up a board and a list where "
+              "I will put new cards.\n"
+              "To do this just type /config")
 
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    level=logging.INFO)
+ACCESS_DENIED = 'Access denied! You must be an admin to use this command!'
+
+WRONG = 'Something went wrong. Please reconfigure bot with the /config command'
+
+logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO
+)

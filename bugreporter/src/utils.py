@@ -14,7 +14,7 @@ def restricted(func):
         user_id = update.effective_user.id
         if str(user_id) != settings.ADMIN:
             bot.send_message(chat_id=update.message.chat_id,
-                             text='Access denied! You must be an admin to use this command!')
+                             text=settings.ACCESS_DENIED)
             return
         return func(bot, update, *args, **kwargs)
 
@@ -27,7 +27,9 @@ def send_typing_action(func):
     @wraps(func)
     def command_func(*args, **kwargs):
         bot, update = args
-        bot.send_chat_action(chat_id=update.effective_message.chat_id, action=telegram.ChatAction.TYPING)
+        bot.send_chat_action(
+            chat_id=update.effective_message.chat_id,
+            action=telegram.ChatAction.TYPING)
         return func(bot, update, **kwargs)
 
     return command_func
