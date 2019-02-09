@@ -1,4 +1,4 @@
-#Telegram - Trello Bugs Reporter
+# Telegram - Trello Bugs Reporter
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/938eddec003548a890ac574f717db067)](https://www.codacy.com/app/alexpulich/telegram-trello-bugs-reporter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alexpulich/telegram-trello-bugs-reporter&amp;utm_campaign=Badge_Grade)
 
 ## Description
