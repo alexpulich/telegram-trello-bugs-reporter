@@ -1,0 +1,9 @@
+version: '3.1'
+services:
+  bug-reporter:
+    restart: always
+    build: bugreporter
+    container_name: bugreporter
+    volumes:
+      - ./bugreporter:/app
+    command: bash -c "pip install -r requirements.txt && python src/app.py"
