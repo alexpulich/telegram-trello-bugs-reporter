@@ -4,12 +4,12 @@
 ## Description
 Simple telegram long polling bot which tracks messages in chats with #bugs/#bug hash tags and creates a trello card in configured list of tasks with reported bug. Supports plain text massages and images/documents attachments.
 
-##Core dependencies
+## Core dependencies
 * py-trello
 * python-dotenv
 * python-telegram-bot
 * tinydb
 
-##How to start
+## How to start
 1. Create .env file from provided .env.example and fill it up with your data
 2. docker-compose up
