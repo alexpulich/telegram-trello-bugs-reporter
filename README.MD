@@ -15,5 +15,5 @@ Simple telegram long polling bot which tracks messages in chats with #bugs/#bug 
 
 ## How to start
 
-1. Create .env file from provided .env.example and fill it up with your data
-2. docker-compose up
+1.  Create .env file from provided .env.example and fill it up with your data
+2.  docker-compose up
